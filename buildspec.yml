@@ -1,11 +1,8 @@
 version: 0.2
 phases:
   install:
-    runtime-versions:
-      nodejs: 20
     commands:
-      - echo "Installing AWS CLI..."
-      - npm install -g aws-cli
+      - echo "Skipping install phase..."
   pre_build:
     commands:
       - echo "Pre-build step..."
@@ -15,4 +12,4 @@ phases:
   post_build:
     commands:
       - echo "Copying files to the S3 bucket..."
-      - aws s3 sync . http://akinyolcicom.s3-website-us-east-1.amazonaws.com --delete
+      - aws s3 sync . s3://akinyolcicom --delete
