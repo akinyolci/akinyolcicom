@@ -11,6 +11,29 @@
 *	Edit this section
 *
 * ======================================================= */
+
+
+/* You can place this within <style> tags in your HTML or an external CSS file */
+#colorlib-blog .certificate { 
+  margin: 20px; 
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+#colorlib-blog .certificate-img img {
+  width: 100%; 
+  max-height: 300px; 
+  object-fit: cover; /* Adjust how the image fits */
+}
+
+#colorlib-blog .desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+
 body {
   font-family: "Karla", Arial, sans-serif;
   line-height: 1.8;
